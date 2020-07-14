@@ -49,54 +49,54 @@ int	main(int argc, char **argv)
 
 ### C Snippets
 
-| Snippet      | Description                                                |
-| ------------ | ---------------------------------------------------------- |
-| `#def`       | snippet for #define                                        |
-| `#ifdef`     | snippet for #if (**Outside Code Supported**)               |
-| `#ifndef`    | snippet for #ifndef (**Outside Code Supported**)           |
-| `#inc`       | snippet for #include                                       |
-| `case`       | snippet for case (...)                                     |
-| `do`         | snippet for a do...while loop (**Outside Code Supported**) |
-| `else`       | snippet for else (**Outside Code Supported**)              |
-| `else if`    | snippet for else-if (**Outside Code Supported**)           |
-| `enum`       | snippet for an enum declaration                            |
-| `fileheader` | snippet for a file header                                  |
-| `for`        | snippet for a for loop (**Outside Code Supported**)        |
-| `if`         | snippet for an if statement (**Outside Code Supported**)   |
-| `main`       | snippet for a main function                                |
-| `struct`     | snippet for a struct declaration                           |
-| `switch`     | snippet for a switch statement                             |
-| `union`      | snippet for a union declaration                            |
-| `while`      | snippet for a while loop (**Outside Code Supported**)      |
+| Snippet      | Description                      | Outside Code Spt |
+| ------------ | -------------------------------- | ---------------- |
+| `#def`       | snippet for #define              |                  |
+| `#ifdef`     | snippet for #if                  | Y                |
+| `#ifndef`    | snippet for #ifndef              | Y                |
+| `#inc`       | snippet for #include             |                  |
+| `case`       | snippet for case (...)           |                  |
+| `do`         | snippet for a do...while loop    | Y                |
+| `else`       | snippet for else                 | Y                |
+| `else if`    | snippet for else-if              | Y                |
+| `enum`       | snippet for an enum declaration  |                  |
+| `fileheader` | snippet for a file header        |                  |
+| `for`        | snippet for a for loop           | Y                |
+| `if`         | snippet for an if statement      | Y                |
+| `main`       | snippet for a main function      |                  |
+| `struct`     | snippet for a struct declaration |                  |
+| `switch`     | snippet for a switch statement   |                  |
+| `union`      | snippet for a union declaration  |                  |
+| `while`      | snippet for a while loop         | Y                |
 
 ### C++ Snippets
 
-| Snippet         | Description                                                |
-| --------------- | ---------------------------------------------------------- |
-| `#def`          | snippet for #def                                           |
-| `#ifdef`        | snippet for #if (**Outside Code Supported**)               |
-| `#ifndef`       | snippet for #ifndef (**Outside Code Supported**)           |
-| `#inc`          | snippet for #include                                       |
-| `case`          | snippet for case (...)                                     |
-| `class`         | snippet for a class declaration                            |
-| `class inherit` | snippet for a class-inherit declaration                    |
-| `do`            | snippet for a do...while loop (**Outside Code Supported**) |
-| `else`          | snippet for else (**Outside Code Supported**)              |
-| `else if`       | snippet for else-if (**Outside Code Supported**)           |
-| `enum`          | snippet for an enum declaration                            |
-| `fileheader`    | snippet for a file header                                  |
-| `for`           | snippet for a for loop (**Outside Code Supported**)        |
-| `foreach`       | snippet for a for-auto loop (**Outside Code Supported**)   |
-| `if`            | snippet for an if statement (**Outside Code Supported**)   |
-| `main`          | snippet for a main function declaration                    |
-| `namespace`     | undefined                                                  |
-| `struct`        | snippet for a struct declaration                           |
-| `switch`        | snippet for a switch statement                             |
-| `template`      | snippet for a template                                     |
-| `try`           | snippet for a try-catch block (**Outside Code Supported**) |
-| `union`         | snippet for a union declaration                            |
-| `using`         | snippet for using namespace                                |
-| `while`         | snippet for a while loop (**Outside Code Supported**)      |
+| Snippet         | Description                             | Outside Code Spt |
+| --------------- | --------------------------------------- | ---------------- |
+| `#def`          | snippet for #def                        |                  |
+| `#ifdef`        | snippet for #if                         | Y                |
+| `#ifndef`       | snippet for #ifndef                     | Y                |
+| `#inc`          | snippet for #include                    |                  |
+| `case`          | snippet for case (...)                  |                  |
+| `class`         | snippet for a class declaration         |                  |
+| `class inherit` | snippet for a class-inherit declaration |                  |
+| `do`            | snippet for a do...while loop           | Y                |
+| `else`          | snippet for else                        | Y                |
+| `else if`       | snippet for else-if                     | Y                |
+| `enum`          | snippet for an enum declaration         |                  |
+| `fileheader`    | snippet for a file header               |                  |
+| `for`           | snippet for a for loop                  | Y                |
+| `foreach`       | snippet for a for-auto loop             | Y                |
+| `if`            | snippet for an if statement             | Y                |
+| `main`          | snippet for a main function declaration |                  |
+| `namespace`     | undefined                               |                  |
+| `struct`        | snippet for a struct declaration        |                  |
+| `switch`        | snippet for a switch statement          |                  |
+| `template`      | snippet for a template                  |                  |
+| `try`           | snippet for a try-catch block           | Y                |
+| `union`         | snippet for a union declaration         |                  |
+| `using`         | snippet for using namespace             |                  |
+| `while`         | snippet for a while loop                | Y                |
 
 ## Recommendations
 
