@@ -1,146 +1,224 @@
 {
-  "#inc": {
-    "prefix": "#inc",
-    "body": ["#include "],
-    "description": "snippet for #include"
-  },
-
-  "usingnamespace": {
-    "prefix": "using",
-    "body": ["using namespace $0"],
-    "description": "snippet for using namespace"
-  },
-
-  "for": {
-    "prefix": "for",
-    "body": ["for (int ${1} = ${2:0}; ${1} < ${3:length}; ${1}++)", "{", "${TM_SELECTED_TEXT}$0", "}\n"],
-    "description": "snippet for a for loop (Outside Code Supported)"
-  },
-
-  "foreach": {
-    "prefix": "fore",
-    "body": ["for (auto &$1 : $2)", "{", "${TM_SELECTED_TEXT}$0", "}\n"],
-    "description": "snippet for a for-auto loop (Outside Code Supported)"
-  },
-
-  "do": {
-    "prefix": "do",
-    "body": ["do", "{", "${TM_SELECTED_TEXT}$0", "} while($1);\n"],
-    "description": "snippet for a do...while loop (Outside Code Supported)"
-  },
-
-  "while": {
-    "prefix": "while",
-    "body": ["while ($1)", "{", "${TM_SELECTED_TEXT}$0", "}\n"],
-    "description": "snippet for a while loop (Outside Code Supported)"
-  },
-
-  "if": {
-    "prefix": "if",
-    "body": ["if ($1)", "{", "${TM_SELECTED_TEXT}$0", "}"],
-    "description": "snippet for an if statement (Outside Code Supported)"
-  },
-
-  "else": {
-    "prefix": "else",
-    "body": ["else", "{", "${TM_SELECTED_TEXT}$0", "}\n"],
-    "description": "snippet for else (Outside Code Supported)"
-  },
-
-  "else if": {
-    "prefix": "else if",
-    "body": ["else if ($1)", "{", "${TM_SELECTED_TEXT}$0", "}"],
-    "description": "snippet for else-if (Outside Code Supported)"
-  },
-
-  "enum": {
-    "prefix": "enum",
-    "body": ["enum $1", "{", "\t$0", "};\n"],
-    "description": "snippet for an enum declaration"
-  },
-
-
-  "class inherit": {
-    "prefix": "classi",
-    "body": ["class $1 :public $0", "{", "", "};\n"],
-    "description": "snippet for a class-inherit declaration"
-  },
-
-  "#ifndef": {
-    "prefix": "#ifndef",
-    "body": [
-      "#ifndef __${TM_FILENAME_BASE/(.*)/${1:/upcase}/}__H__",
-      "#define __${TM_FILENAME_BASE/(.*)/${1:/upcase}/}__H__",
-      "${TM_SELECTED_TEXT}",
-      "$0",
-      "#endif  //!__${TM_FILENAME_BASE/(.*)/${1:/upcase}/}__H__"
-    ],
-    "description": "snippet for #ifndef of whole file (Outside Code Supported)"
-  },
-
-  "#ifdef": {
-    "prefix": "#ifdef",
-    "body": ["#ifdef  ${1}", "${TM_SELECTED_TEXT}$0", "#endif  //$1"],
-    "description": "snippet for #ifdef (Outside Code Supported)"
-  },
-
-  "#if": {
-    "prefix": "#if",
-    "body": ["#if  ${1}", "${TM_SELECTED_TEXT}$0", "#endif  //$1"],
-    "description": "snippet for #if (Outside Code Supported)"
-  },
-
-  "case": {
-    "prefix": "case",
-    "body": ["  case $1:", "\t$0", "\tbreak;"],
-    "description": "snippet for case (...)"
-  },
-
-  "try": {
-    "prefix": "try",
-    "body": ["try", "{", "${TM_SELECTED_TEXT}\n\t$1", "}", "catch (const std::exception& $2)", "{", "\t$0", "}\n"],
-    "description": "snippet for a try-catch block (Outside Code Supported)"
-  },
-
-  "#def": {
-    "prefix": "#def",
-    "body": ["#define  $1  $2\n"],
-    "description": "snippet for #def"
-  },
-
-  "main": {
-    "prefix": "main",
-    "body": [
-      "int\tmain(int argc, char **argv)",
-      "{",
-      "\t$0",
-
-      "\n",
-      "\tsystem(\"pause\");",
-      "\treturn 0;",
-      "}\n"
-    ],
-    "description": "snippet for a main function declaration"
-  },
-
-  "fileheader": {
-    "prefix": "fileheader",
-    "body": [
-      "/**",
-      "**********************************************************************************************************************************************************************************************************************************",
-      "* @file:\t$TM_FILENAME",
-      "* @author:\t$1",
-      "* @date:\t$CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
-      "* @brief:\t$2",
-      "**********************************************************************************************************************************************************************************************************************************",
-      "**/"
-    ],
-    "description": "snippet for a file header"
-  },
-
-  "template": {
-    "prefix": "tem",
-    "body": ["template <typename $0>"],
-    "description": "snippet for a template"
-  }
+    "#inc": {
+        "prefix": "#inc",
+        "body": [
+            "#include "
+        ],
+        "description": "snippet for #include"
+    },
+    "usingnamespace": {
+        "prefix": "using",
+        "body": [
+            "using namespace $0"
+        ],
+        "description": "snippet for using namespace"
+    },
+    "for": {
+        "prefix": "for",
+        "body": [
+            "for (int ${1} = ${2:0}; ${1} < ${3:length}; ${1}++)",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "}\n"
+        ],
+        "description": "snippet for a for loop (Outside Code Supported)"
+    },
+    "foreach": {
+        "prefix": "fore",
+        "body": [
+            "for (auto &$1 : $2)",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "}\n"
+        ],
+        "description": "snippet for a for-auto loop (Outside Code Supported)"
+    },
+    "do": {
+        "prefix": "do",
+        "body": [
+            "do",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "} while($1);\n"
+        ],
+        "description": "snippet for a do...while loop (Outside Code Supported)"
+    },
+    "while": {
+        "prefix": "while",
+        "body": [
+            "while ($1)",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "}\n"
+        ],
+        "description": "snippet for a while loop (Outside Code Supported)"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if ($1)",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "}"
+        ],
+        "description": "snippet for an if statement (Outside Code Supported)"
+    },
+    "else": {
+        "prefix": "else",
+        "body": [
+            "else",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "}\n"
+        ],
+        "description": "snippet for else (Outside Code Supported)"
+    },
+    "else if": {
+        "prefix": "else if",
+        "body": [
+            "else if ($1)",
+            "{",
+            "${TM_SELECTED_TEXT}$0",
+            "}"
+        ],
+        "description": "snippet for else-if (Outside Code Supported)"
+    },
+    "enum": {
+        "prefix": "enum",
+        "body": [
+            "enum $1",
+            "{",
+            "\t$0",
+            "};\n"
+        ],
+        "description": "snippet for an enum declaration"
+    },
+    "class inherit": {
+        "prefix": "classi",
+        "body": [
+            "class $1 :public $0",
+            "{",
+            "",
+            "};\n"
+        ],
+        "description": "snippet for a class-inherit declaration"
+    },
+    "#ifndef": {
+        "prefix": "#ifndef",
+        "body": [
+            "#ifndef __${TM_FILENAME_BASE/(.*)/${1:/upcase}/}__H__",
+            "#define __${TM_FILENAME_BASE/(.*)/${1:/upcase}/}__H__",
+            "${TM_SELECTED_TEXT}",
+            "$0",
+            "#endif  //!__${TM_FILENAME_BASE/(.*)/${1:/upcase}/}__H__"
+        ],
+        "description": "snippet for #ifndef of whole file (Outside Code Supported)"
+    },
+    "#ifdef": {
+        "prefix": "#ifdef",
+        "body": [
+            "#ifdef  ${1}",
+            "${TM_SELECTED_TEXT}$0",
+            "#endif  //$1"
+        ],
+        "description": "snippet for #ifdef (Outside Code Supported)"
+    },
+    "#if": {
+        "prefix": "#if",
+        "body": [
+            "#if  ${1}",
+            "${TM_SELECTED_TEXT}$0",
+            "#endif  //$1"
+        ],
+        "description": "snippet for #if (Outside Code Supported)"
+    },
+    "case": {
+        "prefix": "case",
+        "body": [
+            "  case $1:",
+            "\t$0",
+            "\tbreak;"
+        ],
+        "description": "snippet for case (...)"
+    },
+    "try": {
+        "prefix": "try",
+        "body": [
+            "try",
+            "{",
+            "${TM_SELECTED_TEXT}\n\t$1",
+            "}",
+            "catch (const std::exception& $2)",
+            "{",
+            "\t$0",
+            "}\n"
+        ],
+        "description": "snippet for a try-catch block (Outside Code Supported)"
+    },
+    "#def": {
+        "prefix": "#def",
+        "body": [
+            "#define  $1  $2\n"
+        ],
+        "description": "snippet for #def"
+    },
+    "main": {
+        "prefix": "main",
+        "body": [
+            "int\tmain(int argc, char **argv)",
+            "{",
+            "\t$0",
+            "\n",
+            "\tsystem(\"pause\");",
+            "\treturn 0;",
+            "}\n"
+        ],
+        "description": "snippet for a main function declaration"
+    },
+    "func": {
+        "prefix": "func",
+        "body": [
+            "${0:void}\t${1:funcName}(${2:int}, ${3:arg})",
+            "{",
+            "${TM_SELECTED_TEXT}",
+            "\t$4",
+            "}\n"
+        ],
+        "description": "snippet for a new function (Outside Code Supported)"
+    },
+    "typedef": {
+        "prefix": "typedef",
+        "body": [
+            "typedef ${0:char}\t${1:BYTE};"
+        ],
+        "description": "snippet for a typedef"
+    },
+    "typedeffunc": {
+        "prefix": "typedefpfunc",
+        "body": [
+            "typedef ${0:int}\t(*${1:PFuncName})(${2:int}, ${2:int});"
+        ],
+        "description": "snippet for a typedef pfunction"
+    },
+    "fileheader": {
+        "prefix": "fileheader",
+        "body": [
+            "/**",
+            "**********************************************************************************************************************************************************************************************************************************",
+            "* @file:\t$TM_FILENAME",
+            "* @author:\t$1",
+            "* @date:\t$CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+            "* @brief:\t$2",
+            "**********************************************************************************************************************************************************************************************************************************",
+            "**/"
+        ],
+        "description": "snippet for a file header"
+    },
+    "template": {
+        "prefix": "tem",
+        "body": [
+            "template <typename $0>"
+        ],
+        "description": "snippet for a template"
+    }
 }
