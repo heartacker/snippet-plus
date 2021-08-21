@@ -1,14 +1,23 @@
 {
 	"name": "snippets-plus",
 	"publisher": "heartacker",
-	"displayName": "C/C++ Snippets Plus",
-	"description": "Code snippets Plus for C/C++ with OutSide Code (外侧代码) Support",
-	"version": "1.0.0",
+	"displayName": "C/C++/C# Snippets Plus",
+	"description": "Code snippets Plus for C/C++/C# with OutSide Code (外侧代码) Support",
+	"version": "1.1.0",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"categories": [
 		"Snippets"
+	],
+	"keywords": [
+		"c",
+		"c++",
+		"c#",
+		"cpp",
+		"snippet",
+		"outside",
+		"surround"
 	],
 	"contributes": {
 		"snippets": [
@@ -25,16 +34,6 @@
 				"path": "./snippets/csharp.json"
 			}
 		]
-		//,
-		// "keybindings": [
-		// 	{
-		// 		"key": "ctrl+alt+i",
-		// 		"mac": "ctrl+alt+i",
-		// 		"command": "editor.action.insertSnippet",
-		// 		"when": "editorTextFocus || editorHasSelection",
-		// 		"comment": "insert code snippet, 插入代码片段"
-		// 	}
-		// ]
 	},
 	"galleryBanner": {
 		"color": "#E6E0EA",
