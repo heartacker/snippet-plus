@@ -15,6 +15,8 @@ after that you can select some codeblock and than trigger `insert snippet` in co
 
 ## Usage
 
+![demo](images/demo.gif)
+
 C/C++/C# Snippets use Tab to change one position to another.
 
 And Some Snippet is **OutSide Code Supported**, which is useful for **refactoring**, just like `Visual Studio`:
@@ -39,9 +41,6 @@ int	main(int argc, char **argv)
 +    }
 }
 ```
-
-There is the demo:
-![demo](images/demo.gif)
 
 ## Snippets
 
