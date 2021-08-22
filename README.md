@@ -4,7 +4,7 @@ This extension for Visual Studio Code adds snippets for C/C++/C# base On [kkongh
 
 >这个扩展为Visual Studio Code 添加 C/C++/C# 代码段，现在添加支持外侧代码，就像 Visual Studio 2019，当你选择了文本之后，可以插入外侧包围。
 
-for more information：[heartacker/snippet-plus](https://github.com/heartacker/snippet-dog.git)
+for more information：[heartacker/snippet-plus](https://github.com/heartacker/snippet-plus.git)
 
 ## Recommendations
 
