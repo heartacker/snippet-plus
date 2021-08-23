@@ -140,10 +140,10 @@
     "func": {
         "prefix": "func",
         "body": [
-            "${0:void}\t${1:funcName}(${2:int}, ${3:arg})",
+            "${1:void}\t${2:funcName}(${3:int}, ${4:arg})",
             "{",
             "${TM_SELECTED_TEXT}",
-            "\t$4",
+            "\t$0",
             "}\n"
         ],
         "description": "snippet for a new function (Outside Code Supported)"
@@ -151,16 +151,37 @@
     "typedef": {
         "prefix": "typedef",
         "body": [
-            "typedef ${0:char}\t${1:BYTE};"
+            "typedef ${1:char}\t${2:BYTE};$0"
         ],
         "description": "snippet for a typedef"
     },
     "typedeffunc": {
         "prefix": "typedefpfunc",
         "body": [
-            "typedef ${0:int}\t(*${1:PFuncName})(${2:int}, ${2:int});"
+            "typedef ${1:int}\t(*${2:PFuncName})(${3:int}, ${4:int});$0"
         ],
         "description": "snippet for a typedef pfunction"
+    },
+    "typedefstruct": {
+        "prefix": "typedefstruct",
+        "body": [
+            "typedef struct",
+            "{",
+            "\t${2:int}\t${3:Item};$0",
+            "} ${1:StructNameS};"
+        ],
+        "description": "snippet for a typedef struct"
+    },
+    "typedefenum": {
+        "prefix": "typedefenum",
+        "body": [
+            "typedef enum",
+            "{",
+            "\t${2:Item} = ${3:0},",
+            "\t${4:Item2}$0",
+            "} ${1:EnumNameE};"
+        ],
+        "description": "snippet for a typedef enum"
     },
     "fileheader": {
         "prefix": "fileheader",
