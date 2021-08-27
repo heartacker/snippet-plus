@@ -88,6 +88,15 @@
         ],
         "description": "snippet for #ifdef (Outside Code Supported)"
     },
+    "#if defined()": {
+        "prefix": "#ifdefined",
+        "body": [
+            "#if defined($1)",
+            "${TM_SELECTED_TEXT}$0",
+            "#endif  //$1"
+        ],
+        "description": "snippet for #if defined() (Outside Code Supported)"
+    },
     "#if": {
         "prefix": "#if",
         "body": [

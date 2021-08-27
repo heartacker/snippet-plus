@@ -3,7 +3,15 @@
 	"publisher": "heartacker",
 	"displayName": "C/C++/C# Snippets Plus",
 	"description": "Code snippets Plus for C/C++/C# with OutSide Code (外侧代码) Support",
-	"version": "1.1.0",
+	"version": "1.1.1",
+	"author": {
+		"name": "heartacker"
+	},
+	"homepage": "https://github.com/heartacker/snippet-plus.git",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/heartacker/snippet-plus.git"
+	},
 	"engines": {
 		"vscode": "^0.10.1"
 	},
@@ -39,10 +47,11 @@
 		"color": "#E6E0EA",
 		"theme": "dark"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/heartacker/snippet-dog"
-	},
+	"extensionKind": [
+		"ui",
+		"web",
+		"workspace"
+	],
 	"icon": "images/cpp.png",
 	"license": "Check in License in the root folder"
 }
