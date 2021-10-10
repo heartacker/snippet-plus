@@ -1,9 +1,9 @@
 {
 	"name": "snippets-plus",
 	"publisher": "heartacker",
-	"displayName": "C/C++/C# Snippets Plus",
-	"description": "Code snippets Plus for C/C++/C# with OutSide Code (外侧代码) Support",
-	"version": "1.1.1",
+	"displayName": "C/C++ Snippets Plus",
+	"description": "Code snippets Plus for C/C++ with OutSide Code (外侧代码) Support",
+	"version": "1.2.0",
 	"author": {
 		"name": "heartacker"
 	},
@@ -36,10 +36,6 @@
 			{
 				"language": "cpp",
 				"path": "./snippets/cpp.json"
-			},
-			{
-				"language": "csharp",
-				"path": "./snippets/csharp.json"
 			}
 		]
 	},
