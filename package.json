@@ -45,7 +45,6 @@
 	},
 	"extensionKind": [
 		"ui",
-		"web",
 		"workspace"
 	],
 	"icon": "images/cpp.png",
