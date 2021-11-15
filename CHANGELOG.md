@@ -8,6 +8,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 None
 
+## [1.3.0] 2021-11-15
+
+- add `extern` snippet for `C`
+- Recommand using  <kbd>Ctrl+Alt+I</kbd> as  short cut for `insertsnippet`
+
 ## [1.2.0] 2021-10-10
 
 - delete c# snippet because [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension has contain those snippet feature via [omnisharp-vscode#4715](https://github.com/OmniSharp/omnisharp-vscode/pull/4715)

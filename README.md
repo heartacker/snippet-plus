@@ -6,12 +6,18 @@ This extension for Visual Studio Code adds snippets for C/C++/C# base On [kkongh
 
 for more information：[heartacker/snippet-plus](https://github.com/heartacker/snippet-plus.git)
 
+## import
+
+Strong recommend that using  <kbd>Ctrl+Alt+I</kbd> macOS: <kbd>Cmd+Alt+I</kbd> as   `insert snippet`, not use  <kbd>Ctrl+Shift+I</kbd>
+
+强烈建议使用  <kbd>Ctrl+Alt+I</kbd> macOS: <kbd>Cmd+Alt+I</kbd> 作为插入片段  `insert snippet`的快捷键。而不是 <kbd>Ctrl+Shift+I</kbd>。
+
 ## Recommendations
 
-for better experience of outside code, **strongly** recommend that you should add an new keybinding for `insert snippet`, you can open the key setting by `ctrl+k ctrl+s` to open, and search `insert snippet` to add. like <kbd>ctrl+shift+i</kbd> macOS <kbd>cmd+shift+i</kbd>;
+for better experience of outside code, **strongly** recommend that you should add an new keybinding for `insert snippet`, you can open the key setting by `ctrl+k ctrl+s` to open, and search `insert snippet` to add. like <kbd>Ctrl+Alt+I</kbd> macOS <kbd>Cmd+Alt+I</kbd>;
 after that you can select some codeblock and than trigger `insert snippet` in command palette to insert outside code.
 
->为了更好的体验外侧代码，**强烈**建议您为插入代码片段（`insert snippet`） 添加一个快捷键，你可以通过快捷键 `ctrl+k ctrl+s` 打开键盘设置，并搜索 `insert snippet` 添加。推荐使用<kbd>ctrl+shift+i</kbd> ,macOS <kbd>cmd+shift+i</kbd>;之后，你就可以选择代码然后触发插入代码片段 来插入外侧代码了。
+>为了更好的体验外侧代码，**强烈**建议您为插入代码片段（`insert snippet`） 添加一个快捷键，你可以通过快捷键 `ctrl+k ctrl+s` 打开键盘设置，并搜索 `insert snippet` 添加。推荐使用<kbd>Ctrl+Alt+I</kbd> ,macOS <kbd>Cmd+Alt+I</kbd>;之后，你就可以选择代码然后触发插入代码片段 来插入外侧代码了。
 
 ## Usage
 

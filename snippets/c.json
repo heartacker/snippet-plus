@@ -1,4 +1,17 @@
 ﻿{
+    "extern": {
+        "prefix": "extern",
+        "body": [
+            "#if defined(__cplusplus)",
+            "extern \"C\" {",
+            "#endif // __cplusplus",
+            "$0${TM_SELECTED_TEXT}",
+            "#if defined(__cplusplus)",
+            "}",
+            "#endif // __cplusplus\n"
+        ],
+        "description": "snippet for extern (Outside Code Supported)"
+    },
     "for": {
         "prefix": "for",
         "body": [
