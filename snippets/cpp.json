@@ -1,4 +1,15 @@
 {
+    "clangformat off block": {
+        "prefix": "clangformat",
+        "body": [
+            "/* clang-format off */$0",
+            "",
+            "${TM_SELECTED_TEXT}",
+            "/* clang-format on */",
+            ""
+        ],
+        "description": "clang-format off (Outside Code Supported)"
+    },
     "#inc": {
         "prefix": "#inc",
         "body": [
@@ -131,6 +142,18 @@
             "#endif  //$1"
         ],
         "description": "snippet for #if defined() (Outside Code Supported)"
+    },
+    "#ifdef and true": {
+        "prefix": "#if defined and true",
+        "body": [
+            "#if (defined(${TM_FILENAME_BASE/(.*)/${1:/upcase}/}) && (${TM_FILENAME_BASE/(.*)/${1:/upcase}/}))$0",
+            "",
+            "${TM_SELECTED_TEXT}",
+            "#else",
+            "#endif //${TM_FILENAME_BASE/(.*)/${1:/upcase}/}",
+            ""
+        ],
+        "description": "#if defined and true (Outside Code Supported)"
     },
     "#if": {
         "prefix": "#if",

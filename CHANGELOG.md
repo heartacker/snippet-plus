@@ -8,6 +8,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 None
 
+## [1.4.0] 2021-11-15
+
+- add `#clang-format off` outside code support
+- add `#if defined and true` outside code support
+
 ## [1.3.0] 2021-11-15
 
 - add `extern` snippet for `C`
